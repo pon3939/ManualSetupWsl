@@ -28,6 +28,19 @@ sudo dpkg-reconfigure tzdata
 sudo apt install -y manpages-ja manpages-ja-dev
 ```
 
+シェル変更
+
+```bash
+sudo apt install -y zsh
+chsh -s /usr/bin/zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
+
+# ~/.zshrcに追記
+plugins=(… zsh-completions)
+autoload -U compinit && compinit
+```
+
 ## その他
 
 `\\wsl$`でWindowsからLinuxのファイルシステムにアクセスできる
