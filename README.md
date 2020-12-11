@@ -4,7 +4,7 @@
 
 「コントロール パネル -> プログラム -> プログラムと機能」で「Windows Subsystem for Lynux」を有効化して再起動
 
-Microsft StoreでUbuntuをインストール
+Microsoft StoreでUbuntuをインストール
 
 ## 初期設定
 
